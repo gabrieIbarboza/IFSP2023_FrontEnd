@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffe0;
+    font-family: 'Cagliostro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(to right, #ffdead, #f5deb3);
+    padding: 10px;
+    border-bottom: 3px groove #a0522d;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 2px #a0522d;
+}
+
+#botao_menu {
+    width: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #b8860b;
+    font-size: 1.25rem;
+}
+
+main {
+    margin: 10px auto;
+}
+
+img {
+    width: 100%;
+}
+
+#foto_principal {
+    width: 70%;
+    padding: 10px;
+}
+
+h2 {
+    text-shadow: 1px 1px #8b0000;
+}
+
+h3 {
+    color: #a52a2a;
+    font-size: 1.25rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #d2b48c;
+    color: #fff;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.foto_benef {
+    width: 60%;
+    margin: 10px auto;
+    filter: drop-shadow(2px 2px white);
+}
+
+.benef {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.fotos {
+    background-image: url('../assets/img/fundo.jpg');
+}
+
+.fotos h3 {
+    padding: 10px;
+    background-color: #ffffe0;
+}
+
+.fotos .container {
+    background: none;
+}
+
+.fotos .container img {
+    border-radius: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #botao_menu {
+        display: none;
+    }
+
+    .menu ul {
+        padding: 5px;
+    }
+
+    .menu li {
+        width: 33.3%;
+        float: left;
+        transition: all 500ms;
+    }
+
+    .menu li:hover {
+        background-color: rgba(210, 105, 30, 0.2);
+    }
+
+    #foto_principal {
+        width: 50%;
+    }
+
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .foto_benef {
+        padding: 15px;
+        width: 15%;
+    }
+
+    .benef {
+        padding: 15px;
+        width: 85%;
+    }
+
+    .fotos .container {
+        flex-wrap: wrap;
+    }
+
+    .fotos .container img {
+        width: 20%;
+        filter: grayscale(80%);
+        transition: all 500ms;
+    }
+
+    .fotos img:hover {
+        filter: none;
+    }
+
+}
