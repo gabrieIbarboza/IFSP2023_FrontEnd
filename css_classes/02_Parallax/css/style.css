@@ -94,9 +94,11 @@ h3 {
 .quadro_animado {
     width: 260px;
     height: 170px;
-    margin: auto;background-size: cover;
+    margin: auto;
+    background-size: cover;
     border-radius: 5%;
-    animation-duration: 15s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     animation-name: muda_imagem;
 }
 
